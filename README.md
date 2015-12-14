@@ -3,6 +3,8 @@ This repository contains monitoring code for Zabbix to discover and monitor Dock
 
 File(s):
 * userparameter_zabbixdocker.conf - Client-side agent parameter definition
+* ZabbixDockerTemplate.xml - File to be imported into Zabbix UI for "Template App Docker" template
 * zabbix-docker-discover.py - Python script to provide docker instance discovery.
-* zabbix-docker-value.py - Python helper script to provide information from 'docker investigate'
-
+* zabbix-docker-investigate.py - Python helper script to provide information from 'docker inspect'
+* zabbix-docker-info.py - Python helper script to provide information from 'docker info'
+* zabbix-docker-stats.py - Python helper script to provide information from 'docker stats'

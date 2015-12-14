@@ -2,7 +2,7 @@
 
 #################################################################
 #
-# zabbix-docker-value.py
+# zabbix-docker-inspect.py
 #
 #   A program that parses the "docker inspect" values for
 #   reporting data to Zabbix.
