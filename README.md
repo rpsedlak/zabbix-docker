@@ -1,6 +1,8 @@
 # zabbix-docker
 This repository contains monitoring code for Zabbix to discover and monitor Docker instances on Linux platforms.
 
+This repo is not yet ready for production release.
+
 File(s):
 * userparameter_zabbixdocker.conf - Client-side agent parameter definition
 * zabbix-docker-discover.py - Python script to provide docker instance discovery.
