@@ -6,3 +6,4 @@ File(s):
 * zabbix-docker-discover.py - Python script to provide docker instance discovery.
 * zabbix-docker-value.py - Python helper script to provide information from 'docker investigate'
 
+NOTE: First integration version
