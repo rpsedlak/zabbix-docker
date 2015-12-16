@@ -30,5 +30,4 @@ for i in range(1,len(strings)):
 s_json=dict()
 s_json["data"]=l
 
-#print json
 print json.dumps(s_json)
