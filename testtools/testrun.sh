@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# prerequisite, remove the old docker image
-docker rm oom-test
-docker rmi -f rpsedlak/memkiller
-
 # first, build our special docker image
 docker build --tag="rpsedlak/memkiller" .
 
