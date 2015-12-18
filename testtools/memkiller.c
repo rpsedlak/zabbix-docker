@@ -10,10 +10,16 @@ int main ( int argc, char** argv )
 
   while ( 1 )
   {
+#ifdef DEBUG
      printf("allocating %ld bytes\n",SIZE);
      size += SIZE;
+#endif
+
      ptr = (char*) malloc(SIZE);
+
+#ifdef DEBUG
      printf("%ld allocated thus far\n",size);
+#endif
   }
 
   return 0;
