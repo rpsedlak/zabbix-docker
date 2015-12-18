@@ -37,7 +37,6 @@ key_path = sys.argv[2].split('.')
 ptr = parsed_json[0]
 
 for i in range(0,len(key_path)):
-	print key_path[i]
 	ptr=ptr[key_path[i]]
 
 print ptr
