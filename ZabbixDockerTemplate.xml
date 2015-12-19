@@ -1202,7 +1202,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>docker.version</key>
-                    <delay>60</delay>
+                    <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -1338,7 +1338,7 @@ last(&quot;docker.containers.running&quot;)</params>
                     <privatekey/>
                     <port/>
                     <filter>:</filter>
-                    <lifetime>7</lifetime>
+                    <lifetime>2</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
