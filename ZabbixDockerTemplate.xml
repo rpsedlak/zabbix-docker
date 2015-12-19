@@ -1351,7 +1351,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -1585,7 +1585,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -1624,7 +1624,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -1858,7 +1858,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -1897,7 +1897,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -1936,7 +1936,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2170,7 +2170,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2209,7 +2209,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2248,7 +2248,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2404,7 +2404,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2482,7 +2482,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2521,7 +2521,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2638,7 +2638,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2677,7 +2677,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2716,7 +2716,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2755,7 +2755,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2794,7 +2794,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2833,7 +2833,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2872,7 +2872,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2911,7 +2911,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2950,7 +2950,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -2989,7 +2989,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3028,7 +3028,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3067,7 +3067,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3106,7 +3106,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3145,7 +3145,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3184,7 +3184,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3223,7 +3223,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3613,7 +3613,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3769,7 +3769,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3847,7 +3847,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3886,7 +3886,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3925,7 +3925,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -3964,7 +3964,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -4198,7 +4198,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -4354,7 +4354,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -4549,7 +4549,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -4783,7 +4783,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -4822,7 +4822,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -4939,7 +4939,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -5407,7 +5407,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -5446,7 +5446,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <delay>3600</delay>
                             <history>90</history>
                             <trends>365</trends>
-                            <status>0</status>
+                            <status>1</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
