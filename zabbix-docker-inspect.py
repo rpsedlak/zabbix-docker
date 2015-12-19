@@ -20,8 +20,24 @@ import sys
 # sys.argv[2] - the JSON value of the key to collect
 #################################################################
 
-instanceID = sys.argv[1]
-keyValue   = sys.argv[2]
+import sys
+import subprocess
+import json
 
-print "instanceID: ", instanceID
-print "keyValue:   ", keyValue
+# sys.argv[1] - container ID
+# sys.argv[2] - key value
+
+cmd="docker inspect " + sys.argv[1]
+string = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout.read()
+
+parsed_json = json.loads(string)
+
+key_path = sys.argv[2].split('.')
+
+ptr = parsed_json[0]
+
+for i in range(0,len(key_path)):
+	ptr=ptr[key_path[i]]
+
+print ptr
+
