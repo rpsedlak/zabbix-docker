@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-12-18T04:08:42Z</date>
+    <date>2015-12-21T20:59:49Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -733,12 +733,12 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>docker.info[Deferred Removal Enabled]</key>
+                    <key>docker.info.boolean[Deferred Removal Enabled]</key>
                     <delay>3600</delay>
                     <history>90</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
@@ -1338,7 +1338,7 @@ last(&quot;docker.containers.running&quot;)</params>
                     <privatekey/>
                     <port/>
                     <filter>:</filter>
-                    <lifetime>2</lifetime>
+                    <lifetime>7</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
@@ -5528,6 +5528,24 @@ last(&quot;docker.containers.running&quot;)</params>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template App Docker:docker.container.inspect.boolean[{#ZD_ID},State.OOMKilled].last(0)}=1</expression>
+                            <name>Docker Container {#ZD_NAME} ({#ZD_ID}) Out of memory (killed)</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template App Docker:docker.container.inspect.boolean[{#ZD_ID},State.Paused].last(0)}=1</expression>
+                            <name>Docker Container {#ZD_NAME} ({#ZD_ID}) Paused</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>2</priority>
                             <description/>
                             <type>0</type>
                         </trigger_prototype>
