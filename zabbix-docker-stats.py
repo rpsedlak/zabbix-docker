@@ -88,15 +88,14 @@ options = {
 
 def local_run_command(cmd,file):
 	cmd = cmd + " | tee > " + file 
-	if os.path.isfile(file):
+	if os.path.isfile(file) == False:
+		os.system(cmd)
+	else:
 		(mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(file)
 		ticks=int(time.time())
 		delta=ticks-mtime
 		if (delta > 60):
 			os.system(cmd)
-		else:
-	else:
-		os.system(cmd)
 
 	strings = open(file,"r").readlines()
 	return strings
