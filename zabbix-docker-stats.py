@@ -15,6 +15,8 @@
 
 import sys
 import subprocess
+import os
+import time
 
 def B(b):
 	return int(float(b))
@@ -84,11 +86,27 @@ options = {
 	'onet':onet
 }
 
+def local_run_command(cmd,file):
+	cmd = cmd + " | tee > " + file 
+	if os.path.isfile(file):
+		(mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(file)
+		ticks=int(time.time())
+		delta=ticks-mtime
+		if (delta > 60):
+			os.system(cmd)
+		else:
+	else:
+		os.system(cmd)
+
+	strings = open(file,"r").readlines()
+	return strings
+
+
 container=sys.argv[1]
 key=sys.argv[2]
 
 cmd="docker stats --no-stream=true " + container
-strings = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE).stdout.readlines()
+strings = local_run_command(cmd,"/tmp/zabbix-docker-stats-"+container+".out")
 
 print options[key](strings[1])
 
