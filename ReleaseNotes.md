@@ -1,6 +1,7 @@
 # Release notes
 
 ## Release 1.0.1 - 12/21/2015
+* #20 - Changed collection delay for docker version
 * #18 - Implemented WARNING trigger for paused containers
 * #17 - Implemented AVERAGE trigger for OMMKilled containers
 * #16 - Corrected install.sh problem for overridden directories
