@@ -4,7 +4,7 @@
 
 CONFIG_PATH=/etc/zabbix/zabbix_agentd.d/
 
-if [ "$#" -eq 1]; 
+if [ "$#" -eq 1 ]; 
 	then CONFIG_PATH=$1
 fi
 
