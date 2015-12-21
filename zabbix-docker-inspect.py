@@ -27,27 +27,22 @@ import json
 
 def local_run_command(cmd,file):
 	cmd = cmd + " | tee > " + file 
-	if os.path.isfile(file):
+	if os.path.isfile(file) == False:
+		os.system(cmd)
+	else:
 		(mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(file)
 		ticks=int(time.time())
 		delta=ticks-mtime
 		if (delta > 60):
 			os.system(cmd)
-		else:
-	else:
-		os.system(cmd)
 
-	strings = open(file,"r").readlines()
+	strings = open(file,"r").read()
 	return strings
 
-# sys.argv[1] - container ID
-# sys.argv[2] - key value
-
 cmd="docker inspect " + sys.argv[1]
-string = local_run_command(cmd,"/tmp/zabbix-docker-inspect-"+sys.argv[1]+".out")[0]
-#string = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout.read()
+strings = local_run_command(cmd,"/tmp/zabbix-docker-inspect-"+sys.argv[1]+".out")
 
-parsed_json = json.loads(string)
+parsed_json = json.loads(strings)
 
 key_path = sys.argv[2].split('.')
 
@@ -57,4 +52,3 @@ for i in range(0,len(key_path)):
 	ptr=ptr[key_path[i]]
 
 print ptr
-
