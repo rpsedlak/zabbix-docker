@@ -1,5 +1,9 @@
 # Release notes
 
+## Release 1.0.2 - 12/21/2015
+* #24 - Fixed container memory % report for Ubuntu
+* #23 - Fixed false "down" report for Ubuntu
+
 ## Release 1.0.1 - 12/21/2015
 * #20 - Changed collection delay for docker version
 * #18 - Implemented WARNING trigger for paused containers
