@@ -1,5 +1,10 @@
 # Release notes
 
+## Release 1.0.3 - 12/22/2015
+* #28 - Fixed 'Running instances showing OOMKilled set to true'
+* #27 - Fixed 'ID from 'docker info' only returning a partial value'
+* #15 - Fixed 'Requests for data appears to be overloading 'docker' command'
+
 ## Release 1.0.2 - 12/21/2015
 * #24 - Fixed container memory % report for Ubuntu
 * #23 - Fixed false "down" report for Ubuntu
