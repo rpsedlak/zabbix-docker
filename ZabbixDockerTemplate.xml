@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-12-21T20:59:49Z</date>
+    <date>2015-12-22T01:04:01Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -143,12 +143,51 @@
                     <valuemap/>
                 </item>
                 <item>
-                    <name>Docker Daemons Running</name>
+                    <name>Docker Daemons Running (CentOS)</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>docker.running</key>
+                    <key>docker.running.centos</key>
+                    <delay>60</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>The number of docker process daemons running according to 'ps'</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Docker</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Docker Daemons Running (Ubuntu)</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>docker.running.ubuntu</key>
                     <delay>60</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -5649,7 +5688,7 @@ last(&quot;docker.containers.running&quot;)</params>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template App Docker:docker.running.last(0)}=0</expression>
+            <expression>{Template App Docker:docker.running.centos.last(0)}=0 &amp; {Template App Docker:docker.running.ubuntu.last(0)}=0</expression>
             <name>Docker not running</name>
             <url/>
             <status>0</status>
@@ -5709,7 +5748,7 @@ last(&quot;docker.containers.running&quot;)</params>
             </dependencies>
         </trigger>
         <trigger>
-            <expression>{Template App Docker:docker.running.last(0)}&gt;1</expression>
+            <expression>{Template App Docker:docker.running.centos.last(0)}&gt;1 | {Template App Docker:docker.running.ubuntu.last(0)}&gt;1</expression>
             <name>More than 1 Docker daemon running</name>
             <url/>
             <status>0</status>
