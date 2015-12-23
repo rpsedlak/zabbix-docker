@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-12-22T01:04:01Z</date>
+    <date>2015-12-22T22:18:09Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -5544,6 +5544,15 @@ last(&quot;docker.containers.running&quot;)</params>
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
+                            <expression>{Template App Docker:docker.container.inspect.boolean[{#ZD_ID},State.Running].last(0)}=0</expression>
+                            <name>Docker Container {#ZD_NAME} ({#ZD_ID}) is not running</name>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                        </trigger_prototype>
+                        <trigger_prototype>
                             <expression>{Template App Docker:docker.container.stats[{#ZD_ID},pmem].avg(300)}&gt;70</expression>
                             <name>Docker Container {#ZD_NAME} ({#ZD_ID}) memory exceeding 70% for over 5 minutes</name>
                             <url/>
@@ -5571,7 +5580,7 @@ last(&quot;docker.containers.running&quot;)</params>
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template App Docker:docker.container.inspect.boolean[{#ZD_ID},State.OOMKilled].last(0)}=1</expression>
+                            <expression>{Template App Docker:docker.container.inspect.boolean[{#ZD_ID},State.OOMKilled].last(0)}=1 &amp; {Template App Docker:docker.container.inspect.boolean[{#ZD_ID},State.Running].last(0)}=0</expression>
                             <name>Docker Container {#ZD_NAME} ({#ZD_ID}) Out of memory (killed)</name>
                             <url/>
                             <status>0</status>
