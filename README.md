@@ -21,11 +21,12 @@ If you experience any software defects related to this module, please notify the
 * zabbix-docker-convert.py - Python helper script to convert byte calculations (i.e. GB -> B)
 
 ## Notes:
+* Docker 1.7.1 seems to have an issue where it stops responding after so many commands are issued to it.  Several workarounds have been attempted but the long term testing has demonstrated that this is still an issue.  This issue wasn't present in Docker versions 1.8.x (and later).
 * Approximately half of the discovered keys for a container that are available are disabled by default.  You may enable these to your taste and needs.  The more data you collect the more storage and processing power you will need.
 * The "lifetime" setting for discovered containers is 2 days.  You may vary this based on your needs through the Zabbix UI.  This value only affects the cleanup of containers that are no longer available.
 
 ## Testing Information:
-* This module was tested using CentOS 6.7 and Ubuntu 14.04 agents and Zabbix server 2.0.16, 2.2.11, and 2.4.7 running on CentOS 6.7.  The Docker versions were 1.7.1 and 1.9.1 used for testing. 
+* This module was tested using CentOS 6.7, CentOS 7.1, and Ubuntu 14.04 agents and Zabbix server 2.0.16, 2.2.11, and 2.4.7 running on CentOS 6.7.  The Docker versions were 1.7.1 and 1.9.1 used for testing. 
 
 ## Disclaimer:
 * This code is provided without warranty and responsibility rests completely on the end user for testing, etc.  The author is not responsible for any production issues in any way.
