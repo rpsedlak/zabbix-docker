@@ -1,5 +1,8 @@
 # Release notes
 
+## Release 1.0.4 - 6/10/2017
+* Accepted pull request from kr428 - Corrects Ubuntu Docker issue where the command name has changed
+
 ## Release 1.0.3 - 12/22/2015
 * #28 - Fixed 'Running instances showing OOMKilled set to true'
 * #27 - Fixed 'ID from 'docker info' only returning a partial value'
