@@ -1,4 +1,4 @@
-# zabbix-docker 1.0.5
+# zabbix-docker 1.1.0
 This repository contains monitoring code for Zabbix to discover and monitor Docker instances on Linux platforms.
 
 This module once installed provides monitoring capabilities through Zabbix 2.x and Zabbix 3.x for Docker version 1.7 and later.
@@ -27,6 +27,7 @@ If you experience any software defects related to this module, please notify the
 
 ## Testing Information:
 * This module was tested using CentOS 6.7, CentOS 7.1, and Ubuntu 14.04 agents and Zabbix server 2.0.16, 2.2.11, and 2.4.7 running on CentOS 6.7.  The Docker versions were 1.7.1 and 1.9.1 used for testing. 
+* 2/11/2018 - This module was tested using CentOS 7.4 and Zabbix server 3.4 running CentOS 7.4. The Docker version was 1.12.6.
 
 ## Disclaimer:
 * This code is provided without warranty and responsibility rests completely on the end user for testing, etc.  The author is not responsible for any production issues in any way.
