@@ -34,7 +34,7 @@ def TB(b):
     return int(float(b) * 1024 * 1024 * 1024 * 1024)
 
 def PCT(b):
-    return int(b)
+    return float(b)
 
 size_options = {
     'k':KB,
