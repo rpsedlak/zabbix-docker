@@ -19,35 +19,35 @@ import time
 import re
 
 def B(b):
-        return int(float(b))
+       return int(float(b))
 
 def KB(b):
-        return int(float(b) * 1024)
+       return int(float(b) * 1024)
 
 def MB(b):
-        return int(float(b) * 1024 * 1024)
+       return int(float(b) * 1024 * 1024)
 
 def GB(b):
-        return int(float(b) * 1024 * 1024 * 1024)
+       return int(float(b) * 1024 * 1024 * 1024)
 
 def TB(b):
-        return int(float(b) * 1024 * 1024 * 1024 * 1024)
+       return int(float(b) * 1024 * 1024 * 1024 * 1024)
 
 def PCT(b):
-        return int(b)
+       return int(b)
 
 size_options = {
-        'k':KB,
-        'K':KB,
-        'm':MB,
-        'M':MB,
-        'g':GB,
-        'G':GB,
-        't':TB,
-        'T':TB,
-        'b':B,
-        'B':B,
-        '%':PCT
+       'k':KB,
+       'K':KB,
+       'm':MB,
+       'M':MB,
+       'g':GB,
+       'G':GB,
+       't':TB,
+       'T':TB,
+       'b':B,
+       'B':B,
+       '%':PCT
 }
 
 def recalc(data):
@@ -79,27 +79,27 @@ def onet(data):
         return recalc(data[9])
 
 options = {
-        'pcpu':pcpu,
-        'umem':umem,
-        'lmem':lmem,
-        'pmem':pmem,
-        'inet':inet,
-        'onet':onet
+       'pcpu':pcpu,
+       'umem':umem,
+       'lmem':lmem,
+       'pmem':pmem,
+       'inet':inet,
+       'onet':onet
 }
 
 def local_run_command(cmd,file):
-        cmd = cmd + " | tee > " + file
-        if os.path.isfile(file) == False:
-                os.system(cmd)
-        else:
-                (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(file)
-                ticks=int(time.time())
-                delta=ticks-mtime
-                if (delta > 60):
-                        os.system(cmd)
+       cmd = cmd + " | tee > " + file
+       if os.path.isfile(file) == False:
+               os.system(cmd)
+       else:
+               (mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime) = os.stat(file)
+               ticks=int(time.time())
+               delta=ticks-mtime
+               if (delta > 60):
+                       os.system(cmd)
 
-        strings = open(file,"r").readlines()
-        return strings[1].split()
+       strings = open(file,"r").readlines()
+       return strings[1].split()
 
 
 container=sys.argv[1]
@@ -109,8 +109,5 @@ cmd="docker stats --no-stream=true " + container
 strings = local_run_command(cmd,"/tmp/zabbix-docker-stats-"+container+".out")
 
 print options[key](strings)
-
-# CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
-# d1e8633aa6c8        db                  5.38%               726.8MiB / 11.56GiB   6.14%               956MB / 2.47GB      1.16GB / 35.9GB     63
 
 
