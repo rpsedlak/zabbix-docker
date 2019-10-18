@@ -5,7 +5,7 @@ if [ -d "/etc/zabbix/zabbix_agentd.d/"  ];
         then CONFIG_PATH=/etc/zabbix/zabbix_agentd.d/
 
 elif [ -d "/etc/zabbix/zabbix_agentd.conf.d/"  ];
-        then CONFIG_PATH=/etc/zabbix/zabbix_agentd.d.conf.d/
+        then CONFIG_PATH=/etc/zabbix/zabbix_agentd.conf.d/
 
 else
   echo "Zabbix Config Path not found - please enter path:"
